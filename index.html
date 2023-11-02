@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Classic</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+</head>
+<body>
+
+  <!-- https://images.squarespace-cdn.com/content/v1/5ec54d56403a506c53009bab/1605894526884-CKUUBDF0GKJ6PCYXPNYC/WC17_PrimaryMark.png -->
+<!-- HEADER PAGE -->
+  <div class="px-4 py-5 my-0 text-center headerPicture">
+    <img class="d-block mx-auto mb-4" src="Images/wc_24.png" alt="bodegaboyslogo" width="500rem" height="500rem">
+    <!-- <h1 class="display-5 fw-bold text-body-emphasis">Bodega Boys Invitational</h1> -->
+    <div class="col-lg-6 mx-auto">
+      <p class="display-5 lead mb-4" id="detailsHeader">2/3/2024 &#183 2742 W Denver Pl</p>
+      <p class="lead mb-4" id="attractionHeader">Ice Luge, Kegs, Food, Foosball</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3 text-center btn-register" id="btn-brand">Register</button>
+        <button type="button" class="btn btn-primary btn-lg px-4 text-center btn-roster" id="btn-brand">Roster</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD SNOW -->
+  <div class="snowflakes"> 
+    <div class="snowflake"></div> 
+  </div>
+  <!-- End Section -->
+  <!-- ----------- -->
+  
+
+    <!-- NAVIGATION BAR -->
+    <section class="sectionOne sticky-top" id="navigationBar">
+        <nav class="nav-bar">
+            <div class="container">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+                  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    <span class="fs-4"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
+                  </a>
+            
+                  <ul class="nav nav-pills" id="nav-buttons">
+                    <li class="nav-item"><a href="register.html" class="nav-link active" id="btn-brand-primary" aria-current="page">Register</a></li>
+                    <li class="nav-item"><a href="roster.html" class="btn btn-outline-dark nav-link active" id="btn-brand">Roster</a></li>
+                    <li class="nav-item"><a href="#tournamentRules" class="btn btn-outline-dark nav-link active" id="btn-brand">Tournament Rules</a></li>
+                    <li class="nav-item"><a href="#tournamentHosts" class="btn btn-outline-dark nav-link active" id="btn-brand">About Us</a></li>
+                  </ul>
+                </header>
+              </div>
+        </nav>
+    </section>
+    <!-- End Section -->
+
+
+
+
+          <!-- FEATURETTES BACK AND FORTH -->
+          <div class="container marketing">
+        
+            <!-- FIRST FEATURETTE -->
+            <div class="row featurette mt-5">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 featuretteHeader" id="tournmentRoster">Tournament Roster <span class="text-body-secondary" id="featuretteHeader-sub">Identify your opponents</span></h2>
+                <p class="bodyFeaturette lead mt-3">The foosball tournament roster boasts an impressive array of skilled participants, comprising both seasoned veterans and enthusiastic newcomers. Among the competitors are renowned players known for their lightning-quick reflexes and strategic ball control, adding an aura of excitement to the event. Teams from various backgrounds and playing styles converge, each bringing a unique blend of tactics and flair to the foosball tables. The roster is a diverse mix of ages and experiences, promising an electrifying competition where passion for the game meets the thrill of friendly rivalry.</p>
+                <p class="lead bodyFeaturette"> <a href="roster.html">Click here to view the roster</a> </p>
+              </div>
+              <div class="col-md-5">
+                <svg class="" width="500" height="325" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><image href="/Images/table.JPG" width="100%" ></svg>
+              </div>
+            </div>
+        
+            <hr class="featurette-divider mt-5">
+        
+            <!-- SECOND FEATURETTE -->
+            <div class="row featurette mt-5">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1 featuretteHeader" id="tournamentRules">Tournament Rules <span class="text-body-secondary" id="featuretteHeader-sub">Check 'em out</span></h2>
+                <p class="lead bodyFeaturette">In the thrilling realm of foosball, adherence to key rules is essential for fair and exhilarating gameplay. One paramount regulation, often emphasized, is the <em><b> prohibition of spinning the rods</b></em>. This rule stands as a cornerstone, emphasizing the necessity of controlling the movement of the rods without employing spinning techniques. Players must maneuver the rods skillfully, employing wrist flicks and strategic placements to navigate the ball. This restriction on spinning ensures a level playing field, promoting skillful, calculated gameplay and preventing unfair advantages, ultimately contributing to an engaging and competitive environment for all participants.</p>
+                <p class="lead bodyFeaturette">For a complete list of rules, please see the <a href="https://www.tablesoccer.org/rules/documents/ITSFRulesEnglish.pdf">ITSF Rule Book</a> </p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="325" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><image href="/Images/rules.JPG" width="100%"></image></svg>
+              </div>
+            </div>
+        
+            <hr class="featurette-divider mt-5">
+        
+            <!-- THIRD FEATURETTE -->
+            <div class="row featurette mt-5">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 featuretteHeader" id="tournamentHosts">About Us <span class="text-body-secondary" id="featuretteHeader-sub">Meet your hosts</span></h2>
+                <p class="lead bodyFeaturette">Three buddies, recently sharing a living space, found a common bond in the unlikeliest of places: a foosball table. Their new cohabitation led to an unexpected kinship fostered by their shared passion for the game. Each evening, amidst the clatter of spinning rods and the cheers of victory, they found a camaraderie that transcended mere roommates. With every intense match, the clinks and clatters of the foosball game acted as a backdrop to their growing friendship. The competitive banter and mutual respect that developed during these games became the foundation of their housemate brotherhood, solidifying their bond beyond just shared walls and chores.</p>
+              </div>
+              <div class="col-md-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="325" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><image href="/Images/group.JPG" width="100%"></image></svg>
+              </div>
+            </div>
+      
+            <!-- /END THE FEATURETTES -->
+        
+          </div><!-- /.container -->
+
+    
+
+    <!-- Meet Host Section -->
+    <div class="container marketing mt-5 mb-5 ">
+    <div class="row rounded-3 border shadow-lg" id="host-pics">
+      <div class="col-lg-4 mt-5">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect><image href="Images/David.png" width="100%"></image> </svg>
+        <h2 class="fw-normal">David Burns</h2>
+        <p class="bodyFeaturette">In the world of foosball, David is the strategic pivot that holds the team together, orchestrating plays with precision and finesse. His ability to spin the game in our favor, maneuvering through challenges effortlessly, makes him the indispensable player on the field of friendship.</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 mt-5">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect><image href="Images/Duncan.png" width="100%"></image> </svg>
+        <h2 class="fw-normal">Duncan Hales</h2>
+        <p class="bodyFeaturette">Duncan is the dynamic player who brings an electrifying energy to the foosball table of life, always eager to score goals and infuse excitement into every moment. With his lightning-quick reflexes and adaptive strategies, he's the spinning rod that unpredictably changes the game, keeping everyone on their toes with his vibrant spirit.</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 mt-5">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect><image href="Images/John.png" width="100%"></image> </svg>
+        <h2 class="fw-normal">John Marion</h2>
+        <p class="bodyFeaturette">John's approach to life is akin to the steady control of a foosball player, calmly maneuvering through challenges with calculated precision. He's the unyielding defensive line, safeguarding friendships with unwavering reliability and a strategic mind, ensuring the game of life remains in balance.</p>
+        
+      </div><!-- /.col-lg-4 -->
+    </div>
+  </div>
+
+  <!-- End Section -->
+
+
+
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Bodega Boys, Inc</span>
+        
+      </div>
+      
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+      <div class="text-body-secondary">Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a> is licensed by CC BY 4.0</div>
+    </footer>
+  </div>
+  <!-- End Section -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

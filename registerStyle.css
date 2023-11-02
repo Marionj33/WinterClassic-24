@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(-45deg, #192857 , #94bfe7 , #f2f2f2);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+    
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+}
+
+#nav-buttons{
+    gap: 1em;
+}
+
+#btn-brand{
+    background-color: #94bfe7;
+    border:0.1em solid #192857;
+}
+
+#btn-brand:hover{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+}
+
+#btn-brand-primary{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+}
+
+.nav-bar {
+    background-color: white;
+    position: relative;
+    isolation: isolate;  /*creates stacking context*/ 
+    opacity: 1; 
+
+    /* background: linear-gradient(-45deg, #0C489C, #4766B7, #6477C3, #8491CE);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; */
+    /* height: 100vh; */
+}
+
+.nav-bar::after{
+    content: " ";
+    position: absolute;
+    background-image: url("https://previews.123rf.com/images/cyrustr/cyrustr1707/cyrustr170700255/82266228-ice-background-texture-ice-with-different-shapes-and-cracks.jpg");
+    background-color: white;
+    z-index: -1;
+    inset: 0;  /*shorthand for Top, Bottom, Right, Left */
+    opacity: 0.4;
+}

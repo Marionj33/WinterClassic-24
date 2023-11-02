@@ -1,0 +1,146 @@
+/* FONT */
+@font-face{
+    font-family: myFont;
+    src: url(/Images/brand.ttf);
+}
+
+body{
+    font-family: myFont !important;
+}
+/* - */
+/* - */
+
+
+
+
+/* INTRO VIEW BACKGROUND */
+.headerPicture{
+    background-size: 400% 400%;
+    background-image: url("https://media.istockphoto.com/id/1341838967/photo/mountain-ridges-in-fog-and-pink-sky-at-sunset-in-autumn-beautiful-landscape-with-foggy.webp?b=1&s=170667a&w=0&k=20&c=wZ7eYrbVgPkn-7nQE7Jf2Aq8_6itgR2Z-V3Dq6omu10=");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+
+   
+    
+   
+    /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFemBjVUjnO5HEMyXTX7jLs62q5SdG7jung&usqp=CAU original*/ 
+    /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFz302MDb1F7xe7AVVe_mBg1YJCSPeoalVUg&usqp=CAU all purple/blue, mtn left*/
+    /* data:image/jpeg;base64,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 */
+    /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeqFB4zGKyA6FO6wQJSOrZrqxllxc3sWj5w&usqp=CAU dark blue w/ light on left*/
+    /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMBMKmbYBTRIWzL5rwcw9vJRn6nDM70x3ifA&usqp=CAU all dark blue*/
+    /* https://media.istockphoto.com/id/1341838967/photo/mountain-ridges-in-fog-and-pink-sky-at-sunset-in-autumn-beautiful-landscape-with-foggy.webp?b=1&s=170667a&w=0&k=20&c=wZ7eYrbVgPkn-7nQE7Jf2Aq8_6itgR2Z-V3Dq6omu10= purple w/ layered mtns*/
+    /* https://media.istockphoto.com/id/1401160693/photo/sunrise-over-the-mountains-in-trendy-velvet-violet-color-carpathian-mountains-ukraine.jpg?s=612x612&w=0&k=20&c=o0DvXeOGh5oj2XIEXnFE8I-RD9J07dfpmkcLgSZy4N4= purple w/ sun*/
+    
+
+    background-position: center center;
+    -webkit-background-size: cover;
+
+}
+    
+/* SNOWFLAKE ANIMATION */
+.snowflake{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-image: url(/Images/1.png), url(/Images/2.png), url(/Images/3.png);
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100%{
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+/* - */
+
+
+/* NAV BAR ICE LOOK & BUTTONS */
+.nav-bar {
+    background-color: white;
+    position: relative;
+    isolation: isolate;  /*creates stacking context*/ 
+    opacity: 1; 
+}
+
+.nav-bar::after{
+    content: " ";
+    position: absolute;
+    background-image: url("https://previews.123rf.com/images/cyrustr/cyrustr1707/cyrustr170700255/82266228-ice-background-texture-ice-with-different-shapes-and-cracks.jpg");
+    background-color: white;
+    z-index: -1;
+    inset: 0;  /*shorthand for Top, Bottom, Right, Left */
+    opacity: 0.4;
+}
+
+#nav-buttons{
+    gap: 1em;
+}
+
+.btn{
+    text-align: left !important;
+    width: 100%;
+}
+
+#attractionHeader,#detailsHeader {
+    color: #f2f2f2 ;
+}
+
+#btn-brand{
+    background-color: #94bfe7;
+    border:0.1em solid #192857;
+    z-index: 2;
+}
+
+#btn-brand:hover{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+    z-index: 2;
+}
+
+#btn-brand-primary{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+    z-index: 2;
+}
+/* - */
+/* - */
+
+
+
+#hostpics{
+
+}
+
+.centerPics{
+    
+}
+
+
+/* Featurette Headings */
+.featuretteHeader {
+    color:  #192857 !important;
+}
+
+#featuretteHeader-sub {
+    color:  #94bfe7 !important;
+}
+
+.bodyFeaturette{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SCROLL RULES */
+#tournamentHosts{
+    scroll-margin-top: 6rem;
+}
+#tournamentRules{
+    scroll-margin-top: 6rem;
+}

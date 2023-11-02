@@ -1,0 +1,80 @@
+body {
+    /* background-image: url("https://www.ctvnews.ca/polopoly_fs/1.192058.1337372701!/httpImage/image._gen/derivatives/landscape_1020/image."); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-color: black;
+    font-weight: bold;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.snowflake{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-image: url(/Images/1.png), url(/Images/2.png), url(/Images/3.png);
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100%{
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+#btn-brand{
+    background-color: #94bfe7;
+    border:0.1em solid #192857;
+}
+
+#btn-brand:hover{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+}
+
+#btn-brand-primary{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+}
+
+#tableHead{
+    background-color: #192857;
+    color: #f2f2f2;
+    /* border: 3px solid #94bfe7; */
+    padding: 1em 0;
+    border-radius: 15%;
+}
+
+
+#roster-table {
+    
+    opacity: 0.85;
+}
+
+#roster-header {
+    border: 5px solid #192857;
+    background-color: #192857;
+    color: white;
+    opacity: .85;
+    
+}
+
+.helloWorld{
+    margin-bottom: 5em;
+}
+
+#nav-buttons{
+    gap: 1em;
+}
+
+#brandName{
+    color: #f2f2f2 !important;
+}
