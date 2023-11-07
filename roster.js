@@ -32,17 +32,17 @@ async function pullData() {
         rows.forEach((row) => {
             const trNew = document.createElement("tr");
        
-
+            // console.log(row);
             const temp1 = row.c;
-            console.log(temp1);
+            //console.log(temp1);
 
             
             output.append(trNew);
             
     
             temp1.forEach((cell) => {
-        
-                console.log(cell.v);
+                console.log(cell);
+                // console.log(cell.v);
                 
                 const newtd = document.createElement("td");
            
