@@ -9,53 +9,97 @@
     <link rel="stylesheet" href="roster.css">
 </head>
 <body>
-    <main>
-    <!-- NAVIGATION BAR -->
-    <section class="sectionOne sticky-top" id="navigationBar">
-        <nav class="nav-bar">
-            <div class="container">
-                <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
-                  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                    <span class="fs-4" id="brandName"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
-                  </a>
-            
-                  <ul class="nav nav-pills" id="nav-buttons">
-                    <li class="nav-item"><a href="index.html#navigationBar" class="nav-link active" id="btn-brand-primary" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="register.html" class="btn btn-outline-dark nav-link active" id="btn-brand">Register</a></li>
-                    <li class="nav-item"><a href="index.html#tournamentRules" class="btn btn-outline-dark nav-link active" id="btn-brand">Tournament Rules</a></li>
-                    <li class="nav-item"><a href="index.html#tournamentHosts" class="btn btn-outline-dark nav-link active" id="btn-brand">About Us</a></li>
-                  </ul>
-                </header>
-              </div>
-        </nav>
-    </section>
-    <!-- End Section -->
     
-    <!-- TABLE -->
-          <!-- <h2 class="container mt-5" id="roster-header">Tournament Roster</h2> -->
-          <!-- <div class="helloWorld"></div> -->
-          
-          <div class="table-responsive small container">
-            <table class="table table-striped table-sm table-hover" id="roster-table">
+        <!-- NAVIGATION BAR DESKTOP -->
+        <section class="sectionOne-D sticky-top" id="navigationBar">
+            <nav class="nav-bar">
+                <div class="container">
+                    <header class="d-flex flex-wrap justify-content-center py-3 mb-0 nav-header">
+                      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                        <span class="fs-4 nav-span-d"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"></span>
+                        <span class="fs-4 nav-span-m"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
+                      </a>
+                
+                      <ul class="nav nav-pills" id="nav-buttons">
+                        <li class="nav-item"><a href="index.html" class="btn btn-outline-dark nav-link active text-center" id="btn-brand" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="register.html" class="btn btn-outline-dark nav-link active text-center" id="btn-brand">Register</a></li>
+                        <li class="nav-item"><a href="index.html#tournamentRules-d" class="btn btn-outline-dark nav-link active text-center" id="btn-brand">Tournament Rules</a></li>
+                        <li class="nav-item"><a href="index.html#tournamentHosts-d" class="btn btn-outline-dark nav-link active text-center" id="btn-brand">About Us</a></li>
+                      </ul>
+                    </header>
+                  </div>
+            </nav>
+        </section>
+        <!-- End Section -->
+    
+            <!-- NAVIGATION BAR MOBILE-->
+            <section class="sectionOne-M sticky-top" id="navigationBar">
+              <nav class="nav-bar">
+                  <div class="container">
+                      <header class="d-flex flex-wrap justify-content-between py-3 mb-0 nav-header">
+                        <a href="/" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                          <span class="fs-4 nav-span-d px-3"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"></span>
+                          <span class="fs-4 nav-span-m"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
+                        </a>
+                  
+                        <ul class="nav nav-pills" id="nav-buttons">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="menu" height="30rem"></a>
+                            <ul class="dropdown-menu py-0">
+                                <li class="nav-item"><a href="index.html" class="nav-link active text-center" id="btn-brand" aria-current="page">Home</a></li>
+                                <li class="nav-item"><a href="register.html" class="btn btn-outline-dark nav-link active" id="btn-brand">Register</a></li>
+                                <li class="nav-item"><a href="index.html#tournamentRules-m" class="btn btn-outline-dark nav-link active" id="btn-brand">Rules</a></li>
+                                <li class="nav-item"><a href="index.html#tournamentHosts-m" class="btn btn-outline-dark nav-link active" id="btn-brand">About Us</a></li>
+                              <li><hr class="dropdown-divider my-1"></li>
+                              <li class="nav-item"><a href="shirt.html" class="btn btn-outline-dark nav-link active" id="btn-brand">Shirt Order</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </header>
+                    </div>
+              </nav>
+          </section>
+    
+    <!-- TABLE - Tournament Roster - DESKTOP -->
+    <main class="mt-4 tourRoster-d">
+          <div class="table-responsive small container table-container tableTitle"> Tournament Roster
+            <table class="table table-striped table-sm table-hover mb-0" id="roster-table">
               <thead>
-                <tr class="">
-                  <th class="table-info" scope="col" id="tableHead">First Name</th>
-                  <th class="table-info" scope="col" id="tableHead">Last Name</th>
-                  <th class="table-info" scope="col" id="tableHead">Phone</th>
-                  <th class="table-info" scope="col" id="tableHead">Email</th>
-                  <th class="table-info" scope="col" id="tableHead">Shirt</th>
-                  <!-- <th class="table-info" scope="col">Rank</th> -->
+                <tr class=""> 
+                  <th class="table-info tableHead" scope="col" id="tableHead">First <br> Name</th>
+                  <th class="table-info tableHead" scope="col" id="tableHead">Last <br> Name</th>
+                  <th class="table-info tableHead-roster" scope="col" id="tableHead">Foosball <br> Level</th>
                 </tr>
               </thead>
-              <tbody class="helloWorld">
+              <tbody class="participatingRoster">
 
               </tbody>
             </table>
+            <p class="text-body-secondary note mt-0">*If name is highlighted, they wish to be on "standby"</p>
+          </div>
+
+
+    <!-- TABLE - Attending Party-->
+          <div class="table-responsive small container table-container tableTitle mt-5"> Attending Party
+            <table class="table table-striped table-sm table-hover mb-0" id="roster-table">
+              <thead>
+                <tr class=""> 
+                  <th class="table-info tableHead" scope="col" id="tableHead">First <br> Name</th>
+                  <th class="table-info tableHead" scope="col" id="tableHead">Last <br> Name</th>
+                  <!-- <th class="table-info" scope="col" id="tableHead">Foosball Level</th> -->
+                  <!-- <th class="table-info" scope="col">Rank</th> -->
+                </tr>
+              </thead>
+              <tbody class="eventRoster">
+
+              </tbody>
+            </table>
+            <p class="text-body-secondary note">*If name is highlighted, they are a "maybe"</p>
           </div>
           <div class="snowflake"></div>
        
-        </main>
+    </main>
     <!-- End Section -->
 
 

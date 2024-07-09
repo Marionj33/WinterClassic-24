@@ -7,24 +7,26 @@
     <title>Winter Classic - Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="registerStyle.css">
+    <link href="https://db.onlinewebfonts.com/c/51abcf14d12d03a11a793c579575bc8c?family=CCThisManThisMonster+W00+Rg" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <section class="sectionOne sticky-top" id="navigationBar">
+    <!-- NAVIGATION BAR DESKTOP -->
+    <section class="sectionOne-D sticky-top" id="navigationBar">
         <nav class="nav-bar">
             <div class="container">
-                <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-0 nav-header">
                   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                    <span class="fs-4"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
+                    <span class="fs-4 nav-span-d"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"></span>
+                    <span class="fs-4 nav-span-m"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
                   </a>
             
                   <ul class="nav nav-pills" id="nav-buttons">
-                    <li class="nav-item"><a href="index.html#navigationBar" class="nav-link active" id="btn-brand-primary" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active" id="btn-brand-primary" aria-current="page">Home</a></li>
                     <li class="nav-item"><a href="roster.html" class="btn btn-outline-dark nav-link active" id="btn-brand">Roster</a></li>
-                    <li class="nav-item"><a href="index.html#tournamentRules" class="btn btn-outline-dark nav-link active" id="btn-brand">Tournament Rules</a></li>
-                    <li class="nav-item"><a href="index.html#tournamentHosts" class="btn btn-outline-dark nav-link active" id="btn-brand">About Us</a></li>
+                    <li class="nav-item"><a href="index.html#tournamentRules-d" class="btn btn-outline-dark nav-link active" id="btn-brand">Tournament Rules</a></li>
+                    <li class="nav-item"><a href="index.html#tournamentHosts-d" class="btn btn-outline-dark nav-link active" id="btn-brand">About Us</a></li>
                   </ul>
                 </header>
               </div>
@@ -32,6 +34,35 @@
     </section>
     <!-- End Section -->
 
+        <!-- NAVIGATION BAR MOBILE-->
+        <section class="sectionOne-M sticky-top" id="navigationBar">
+          <nav class="nav-bar">
+              <div class="container">
+                  <header class="d-flex flex-wrap justify-content-between py-3 mb-0 nav-header">
+                    <a href="/" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                      <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+                      <span class="fs-4 nav-span-d px-3"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"></span>
+                      <span class="fs-4 nav-span-m"><img src="Images/wc_24.png" alt="winterClassic Logo" style="height: 2em;" style="width: 2em"> Bodega Boys &#183 Winter Classic</span>
+                    </a>
+              
+                    <ul class="nav nav-pills" id="nav-buttons">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="menu" height="30rem"></a>
+                        <ul class="dropdown-menu py-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link active text-center" id="btn-brand" aria-current="page">Home</a></li>
+                            <li class="nav-item"><a href="roster.html" class="btn btn-outline-dark nav-link active text-center" id="btn-brand">Roster</a></li>
+                            <li class="nav-item"><a href="index.html#tournamentRules-m" class="btn btn-outline-dark nav-link active text-center" id="btn-brand">Rules</a></li>
+                            <li class="nav-item"><a href="index.html#tournamentHosts-m" class="btn btn-outline-dark nav-link active text-center" id="btn-brand">About Us</a></li>
+                          <li><hr class="dropdown-divider my-1"></li>
+                          <li class="nav-item"><a href="shirt.html" class="btn btn-outline-dark nav-link active" id="btn-brand">Shirt Order</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                </div>
+          </nav>
+      </section>
+      <!-- End Section -->
 
 
 
@@ -42,62 +73,64 @@
     <!-- REGISTER -->
     <!-- <body class="d-flex align-items-center py-4 bg-body-tertiary" cz-shortcut-listen="true"> -->
         <div class="container">
-        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-          <symbol id="check2" viewBox="0 0 16 16">
-            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
-          </symbol>
-          <symbol id="circle-half" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-          </symbol>
-          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
-            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
-          </symbol>
-          <symbol id="sun-fill" viewBox="0 0 16 16">
-            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-          </symbol>
-        </svg>
-    
         
     <main class="form-signin w-100 m-auto">
         <form id="formFill" action="https://sheetdb.io/api/v1/iyczrbsaw603m" method="post">
             <h1 class="h3 mb-3 fw-normal mt-5">Please Register Here!</h1>
+            <p class="text-body-secondary limitedSpace-note">Be advised that space in the upcoming tournament is limited, and contestant selection will prioritize success in our prior event to ensure a competitive and engaging enviornment.</p>
     
             <!-- Register First Name -->
             <div class="form-floating" id="register-name">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Po the Panda" value="Joe" name="data[first name]" required />
+                <input type="text" class="form-control" id="floatingInput" name="data[first name]" required />
                 <label for="floatingInput">First Name</label>
             </div>
 
             <!-- Register Last Name -->
             <div class="form-floating" id="register-name">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Po the Panda" value="Smith" name="data[last name]" required />
+                <input type="text" class="form-control" id="floatingInput" aria-placeholder="the Panda" name="data[last name]" required />
                 <label for="floatingInput">Last Name</label>
+            </div>
+
+            <!-- Register Attending Event -->
+            <div class="form-floating" id="register-attending">
+                <select class="form-select" id="floatingInput" name="data[attending]">
+                    <option value="NA"></option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                    <option value="Maybe">Maybe</option>
+                </select>
+                <label for="floatingPassword">Attending Event</label>
+                
+            </div>
+
+            <!-- Register Playing -->
+            <div class="form-floating" id="register-playing">
+                <select class="form-select" id="floatingInput" name="data[participant]">
+                    <option value="NA"></option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                    <option value="Standby">Standby</option>
+                </select>
+                <label for="floatingPassword">Tournament Participant</label>
+            </div>
+
+            <!-- Register Level -->
+            <div class="form-floating" id="register-level">
+                <input type="text" class="form-control" id="floatingPassword" name="data[level]" required />
+                <label for="floatingPassword">Please Describe Your Foosball Level</label>
             </div>
 
             <!-- Register Phone -->
             <div class="form-floating" id="register-number">
-                <input type="phone" class="form-control" id="floatingInput" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" value="2152624987" name="data[phone]" required />
+                <input type="phone" class="form-control" id="floatingInput" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="data[phone]" required />
                 <label for="floatingInput">Phone Number</label>
             </div>
 
-            <!-- Register Email -->
-            <div class="form-floating" id="register-email">
-                <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com" value="email@email.com" name="data[email]" required />
-                <label for="floatingPassword">Email Address</label>
-            </div>
-
-            <!-- Register Shirt -->
-            <div class="form-floating" id="register-shirt">
-                <select name="data[shirt]" class="form-control" id="floatingPassword" required>
-                    <option value="NA">NA</option>
-                    <option value="XL">XL</option>
-                    <option value="L">L</option>
-                    <option value="M">M</option>
-                    <option value="S">S</option>
-                </select>
-                <label for="floatingPassword">Shirt Size</label>
-            </div>
+            <!-- Register Past -->
+            <!-- <div class="form-floating" id="register-past" >
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate"> Past </label>
+            </div> -->
     
             <button class="btn btn-primary w-100 py-2 mt-5" type="submit">Submit</button>
             <p class="mt-5 mb-3 text-body-secondary">© Bodega Boys 2024</p>

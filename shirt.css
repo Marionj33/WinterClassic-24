@@ -1,0 +1,168 @@
+@font-face{
+    font-family: myFont;
+    src: url(/Images/brand.ttf);
+}
+
+body{
+    font-family: myFont;
+}
+
+.pic-bucket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.img{
+    border: 1rem solid #192857;
+    border-radius: 15%;
+}
+
+.lead{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV BAR ICY LOOK & BUTTONS */
+.nav-bar {
+    background-color: white;
+    position: relative;
+    isolation: isolate;  /*creates stacking context*/ 
+    opacity: 1; 
+    height: 4.5rem;
+    align-items: center;
+}
+
+.nav-bar::after{
+    content: " ";
+    position: absolute;
+    background-image: url("https://previews.123rf.com/images/cyrustr/cyrustr1707/cyrustr170700255/82266228-ice-background-texture-ice-with-different-shapes-and-cracks.jpg");
+    background-color: white;
+    z-index: -1;
+    inset: 0;  /*shorthand for Top, Bottom, Right, Left */
+    opacity: 0.4;
+}
+
+#nav-buttons{
+    gap: 1em;
+}
+
+.btn{
+    /* text-align: left !important; */
+    width: 100%;
+}
+
+#attractionHeader,#detailsHeader {
+    color: #f2f2f2 ;
+}
+
+#btn-brand{
+    background-color: #94bfe7;
+    border:0.1em solid #192857;
+    z-index: 2;
+}
+
+#btn-brand-roster{
+    background-color: #192857;
+    border:0.1em solid #94bfe7;
+    z-index: 2;
+}
+
+
+#btn-brand:hover{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+    z-index: 2;
+}
+
+#btn-brand-primary{
+    background-color: #192857;
+    border: 0.1em solid #94bfe7;
+    z-index: 2;
+}
+
+.nav-span-d{
+    display: none;
+}
+.sectionOne-M{
+    display: none;
+}
+.sectionOne-D{
+    display: block;
+}
+/* - */
+
+.shirtOrder-m{
+    display: none;
+}
+
+.shirtOrder-d{
+    display: block;
+}
+
+@media (max-width: 1366px) {
+
+    .shirtOrder-d{
+        display: none;
+    }
+
+    .shirtOrder-m{
+        display: block;
+    }
+
+    /* TOP PAGE */
+    #brand-logo{
+        height: 50%;
+        width: 50%;
+    }
+
+    .featurette-img{
+        width: 100%; 
+    }
+
+    #detailsHeader{
+        color: #192857;
+    }
+
+    .btn-group-lg>.btn, .btn-lg {
+        --bs-btn-font-size: 1rem !important;
+    }
+
+    .side-note{
+        font-size: 0.5rem;
+        text-align: start;
+    }
+
+    /* NAV BAR */
+    .nav-span-d{
+        display: block;
+    }
+    .nav-span-m{
+        display: none;
+    }
+    .sectionOne-D{
+        display: none;
+    }
+    .sectionOne-M{
+        display: block;
+    }
+
+    /* IMGs */
+    .img{
+        border: 0.25rem solid #192857;
+        border-radius: 15%;
+    }
+
+    #t-shirt-m{
+        /* height: 20% !important; */
+        width: 95vw !important;
+    }
+
+
+    .topContent{
+        font-size: 0.75rem;
+    }
+    .exVenmo{
+        font-size: 0.5rem;
+    }
+}

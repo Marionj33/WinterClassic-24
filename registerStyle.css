@@ -1,8 +1,15 @@
+@font-face{
+    font-family: myFont;
+    src: url(/Images/brand.ttf);
+}
+
 body{
     background: linear-gradient(-45deg, #192857 , #94bfe7 , #f2f2f2);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
+    font-family: myFont;
+
 }
     
 @keyframes gradient {
@@ -56,4 +63,55 @@ body{
     z-index: -1;
     inset: 0;  /*shorthand for Top, Bottom, Right, Left */
     opacity: 0.4;
+}
+
+.limitedSpace-note{
+    font-size: 0.85rem;
+}
+
+.nav-span-d{
+    display: none;
+}
+.sectionOne-M{
+    display: none;
+}
+.sectionOne-D{
+    display: block;
+}
+
+
+@media (max-width: 1366px) {
+
+    /* TOP PAGE */
+    #brand-logo{
+        height: 50%;
+        width: 50%;
+    }
+
+    .featurette-img{
+        width: 100%; 
+    }
+
+    #detailsHeader{
+        color: #192857;
+    }
+
+    .btn-group-lg>.btn, .btn-lg {
+        --bs-btn-font-size: 1rem !important;
+    }
+
+    /* NAV BAR */
+    .nav-span-d{
+        display: block;
+    }
+    .nav-span-m{
+        display: none;
+    }
+    .sectionOne-D{
+        display: none;
+    }
+    .sectionOne-M{
+        display: block;
+    }
+
 }

@@ -1,13 +1,19 @@
+@font-face{
+    font-family: myFont;
+    src: url(/Images/brand.ttf);
+}
+
 body {
-    /* background-image: url("https://www.ctvnews.ca/polopoly_fs/1.192058.1337372701!/httpImage/image._gen/derivatives/landscape_1020/image."); */
+    background-image: url("https://previews.123rf.com/images/cyrustr/cyrustr1707/cyrustr170700255/82266228-ice-background-texture-ice-with-different-shapes-and-cracks.jpg"); 
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
-    background-color: black;
+    /* background-color: black; */
     font-weight: bold;
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
     min-height: 100vh;
+    font-family: myFont;
 }
 
 .snowflake{
@@ -30,6 +36,24 @@ body {
     }
 }
 
+/* NAV BAR ICY LOOK & BUTTONS */
+.nav-bar {
+    background-color: white;
+    position: relative;
+    isolation: isolate;  /*creates stacking context*/ 
+    opacity: 1; 
+}
+
+.nav-bar::after{
+    content: " ";
+    position: absolute;
+    background-image: url("https://previews.123rf.com/images/cyrustr/cyrustr1707/cyrustr170700255/82266228-ice-background-texture-ice-with-different-shapes-and-cracks.jpg");
+    background-color: white;
+    z-index: -1;
+    inset: 0;  /*shorthand for Top, Bottom, Right, Left */
+    opacity: 0.4;
+}
+
 #btn-brand{
     background-color: #94bfe7;
     border:0.1em solid #192857;
@@ -49,13 +73,21 @@ body {
     background-color: #192857;
     color: #f2f2f2;
     /* border: 3px solid #94bfe7; */
-    padding: 1em 0;
+    padding: 1rem 0 1rem 1rem;
     /* border-radius: 15%; */
 }
 
 
+
+.tableTitle{
+    color: #192857;
+}
+
+.table-container{
+    width: 100%;
+}
+
 #roster-table {
-    
     opacity: 0.85;
 }
 
@@ -64,7 +96,6 @@ body {
     background-color: #192857;
     color: white;
     opacity: .85;
-    
 }
 
 .helloWorld{
@@ -76,5 +107,69 @@ body {
 }
 
 #brandName{
-    color: #f2f2f2 !important;
+    color: #192857;
+}
+
+
+
+.nav-span-d{
+    display: none;
+}
+.sectionOne-M{
+    display: none;
+}
+.sectionOne-D{
+    display: block;
+}
+
+/* .tableFont{
+    font-family: Arial, Helvetica, sans-serif;;
+} */
+
+.tableMaybe{
+    /* background-color: yellow !important; */
+    opacity: 0.4 !important;
+    
+}
+.note{
+    font-size: 0.7rem;
+}
+
+@media (max-width: 1366px) {
+
+    /* TOP PAGE */
+    #brand-logo{
+        height: 50%;
+        width: 50%;
+    }
+
+    .featurette-img{
+        width: 100%; 
+    }
+
+    #detailsHeader{
+        color: #192857;
+    }
+
+    .btn-group-lg>.btn, .btn-lg {
+        --bs-btn-font-size: 1rem !important;
+    }
+
+    /* NAV BAR */
+    .nav-span-d{
+        display: block;
+    }
+    .nav-span-m{
+        display: none;
+    }
+    .sectionOne-D{
+        display: none;
+    }
+    .sectionOne-M{
+        display: block;
+    }
+
+
+
+
 }

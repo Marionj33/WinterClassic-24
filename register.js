@@ -22,7 +22,7 @@ form.addEventListener("submit", async (e) => {
     const data = await res.json();
 
     form.reset();
-    window.location.href="roster.html";
+    window.location.href="shirt.html";
 });
 
     

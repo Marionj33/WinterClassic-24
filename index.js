@@ -15,16 +15,23 @@
 
 const btnRegister = document.querySelector(".btn-register");
 const btnRoster = document.querySelector(".btn-roster");
+const btnShirt = document.querySelector(".btn-shirt");
 
 btnRegister.addEventListener("click", redirect);
 
 function redirect() {
-    window.location.href = "register.html";
+    window.location.href="register.html";
 }
 
 
 btnRoster.addEventListener("click", redirect1);
 
 function redirect1() {
-    window.location.href = "roster.html";
+    window.location.href="roster.html";
+}
+
+btnShirt.addEventListener("click", redirect2);
+
+function redirect2() {
+    window.location.href="shirt.html";
 }
