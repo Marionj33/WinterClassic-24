@@ -7,11 +7,22 @@
 body{
     font-family: myFont !important;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #013b93; /* Set the background color */
+    z-index: -1; /* Ensure this background is behind everything else */
+}
 /* - */
 
 /* INTRO VIEW BACKGROUND */
 .headerPicture{
-    background-size: 400% 400%;
+    background-size: cover;
     background-image: url("/Images/kai-oberhauser-BKAaLmT0tIs-unsplash.jpg");
     background-repeat: no-repeat;
     zoom: 100%;
@@ -53,6 +64,11 @@ body{
 }
 /* - */
 
+/* Homepage Button */
+.homepage-btn {
+    position: absolute;
+    z-index: 100;
+}
 
 /* NAV BAR ICY LOOK & BUTTONS */
 .nav-bar {
@@ -115,6 +131,10 @@ body{
     font-weight: bolder !important;
     border: 0.1em solid #94bfe7;
     z-index: 2;
+}
+
+.btn-custom {
+    height: 6rem;
 }
 /* - */
 /* - */

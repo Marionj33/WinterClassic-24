@@ -16,6 +16,8 @@
 const btnRegister = document.querySelector(".btn-register");
 const btnRoster = document.querySelector(".btn-roster");
 const btnShirt = document.querySelector(".btn-shirt");
+const btnPics = document.querySelector(".btn-picture");
+const btnHome = document.querySelector(".btn-homepage");
 
 btnRegister.addEventListener("click", redirect);
 
@@ -34,4 +36,16 @@ btnShirt.addEventListener("click", redirect2);
 
 function redirect2() {
     window.location.href="shirt.html";
+}
+
+btnPics.addEventListener("click", redirect3);
+
+function redirect3() {
+    window.location.href="wcPhoto.html";
+}
+
+btnHome.addEventListener("click", redirect4);
+
+function redirect4() {
+    window.location.href="/homepageIndex.html";
 }

@@ -1,0 +1,201 @@
+@font-face{
+    font-family: myFont;
+    src: url(/Images/brand.ttf);
+}
+
+body{
+    font-family: myFont;
+}
+
+.pic-bucket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.img{
+    border: 1rem solid #FF3D00;
+    border-radius: 15%;
+}
+
+.lead{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV BAR ICY LOOK & BUTTONS */
+.nav-bar {
+    background-color: white;
+    position: relative;
+    isolation: isolate;  /*creates stacking context*/ 
+    opacity: 1; 
+    height: 4.5rem;
+    align-items: center;
+}
+
+.nav-bar::after{
+    content: " ";
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1507629221898-576a56b530bb?q=80&w=3670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center 60%;
+    background-color: white;
+    z-index: -1;
+    inset: 0;  /*shorthand for Top, Bottom, Right, Left */
+    opacity: 0.4;
+    color: #FFE3CA;
+}
+
+#nav-buttons{
+    gap: 1em;
+}
+
+.btn{
+    /* text-align: left !important; */
+    width: 100%;
+}
+
+#btn-brand{
+    background-color: #FF900B;
+    border:0.1em solid #FF3D00 ;
+    color: #FFE3CA ;
+    z-index: 100;
+    text-decoration: none;
+    position: relative;
+    pointer-events: auto;
+}
+
+#btn-brand:hover{
+    background-color: #FF3D00 ;
+    border: 0.1em solid #FF900B;
+    z-index: 3;
+}
+
+#btn-brand-primary{
+    background-color: #FF3D00 ;
+    border: 0.1em solid #FF900B;
+    z-index: 3;
+}
+
+.btn-roster{
+    background-color: #FFE3CA !important;
+    color: #FF900B !important;
+    z-index: 2;
+}
+
+.btn-roster:hover{
+    font-weight: bolder !important;
+    border: 0.1em solid #FF900B;
+    z-index: 2;
+}
+
+.btn-custom {
+    height: 6rem;
+}
+
+#extra {
+    background-color: #081C15;
+    border:0.1em solid #FF3D00;
+    color: #FFE3CA;
+    z-index: 2;
+}
+
+#title {
+    color: #FFE3CA !important;
+    
+}
+
+
+#btn-brand-roster{
+    background-color: #FF900B;
+    border:0.1em solid #FF3D00;
+    color: #FFE3CA !important;
+    z-index: 2;
+}
+
+
+.nav-span-d{
+    display: none;
+}
+.sectionOne-M{
+    display: none;
+}
+.sectionOne-D{
+    display: block;
+}
+/* - */
+
+.shirtOrder-m{
+    display: none;
+}
+
+.shirtOrder-d{
+    display: block;
+}
+
+@media (max-width: 1366px) {
+
+    .shirtOrder-d{
+        display: none;
+    }
+
+    .shirtOrder-m{
+        display: block;
+    }
+
+    /* TOP PAGE */
+    #brand-logo{
+        height: 50%;
+        width: 50%;
+    }
+
+    .featurette-img{
+        width: 100%; 
+    }
+
+    #detailsHeader{
+        color: #192857;
+    }
+
+    .btn-group-lg>.btn, .btn-lg {
+        --bs-btn-font-size: 1rem !important;
+    }
+
+    .side-note{
+        font-size: 0.5rem;
+        text-align: start;
+    }
+
+    /* NAV BAR */
+    .nav-span-d{
+        display: block;
+    }
+    .nav-span-m{
+        display: none;
+    }
+    .sectionOne-D{
+        display: none;
+    }
+    .sectionOne-M{
+        display: block;
+    }
+
+    /* IMGs */
+    .img{
+        border: 0.25rem solid #192857;
+        border-radius: 15%;
+    }
+
+    #t-shirt-m{
+        /* height: 20% !important; */
+        width: 95vw !important;
+    }
+
+
+    .topContent{
+        font-size: 0.75rem;
+    }
+    .exVenmo{
+        font-size: 0.5rem;
+    }
+}
